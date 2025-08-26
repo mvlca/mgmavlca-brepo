@@ -2,6 +2,7 @@
 date = '2025-08-22T10:29:18+06:30'
 draft = false
 title = 'VLCA Upload'
+layout = 'plainpage'
 +++
 
 {{< image-global src="images/mgma-logo-0.png" class="mgma-logo-style-one" >}}

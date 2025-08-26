@@ -1,0 +1,2 @@
+{{ $class := .Get "class" | default "outer-container" }}
+<div class="{{ $class }}">{{ .Inner }}</div>

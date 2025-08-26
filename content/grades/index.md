@@ -6,8 +6,6 @@ title = 'VLCA Compliance Grades'
     add = 'grades'
 +++
 
-## VLCA Compliance Grades
-
 The Myanmar Garment Manufacturers Association's (MGMA) Voluntary Labour Compliance Assessment (VLCA) categorizes compliance levels into four grades: Higher Compliance, Full Compliance, Partial Compliance, and Non-Compliance. Each grade is subdivided into two components, resulting in a total of eight components, each visually represented by a distinct color.
 
 Compliance grades, their corresponding subcomponents, and their respective colors are as follows:

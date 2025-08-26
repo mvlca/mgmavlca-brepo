@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="/fonts/awesome/css/solid.css">
 <link rel="stylesheet" href="/fonts/awesome/css/brands.css">
 
+<link rel="stylesheet" href="/fonts/material-symbols/outlined.css">
+
 {{ partialCached "head/base.html" . }}
 {{ partialCached "head/header.html" . }}
 {{ partialCached "head/footer.html" . }}
@@ -27,4 +29,8 @@
     {{ end }}
 {{ else if .IsSection }}
     {{ partialCached "head/section.html" . }}
+{{ end }}
+
+{{ if .HasShortcode "warning" }}
+    {{ partialCached "head/warning.html" . }}
 {{ end }}

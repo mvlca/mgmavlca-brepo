@@ -9,6 +9,23 @@ main .section article {
     padding: 1rem;
     margin-bottom: 1rem;
 }
+.time-readmore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: gray;
+    margin-top: 1rem;
+}
+.read-more {
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 600;
+}
+.list-title {
+    text-decoration: none;
+    color: darkslateblue;
+}
 
 @media screen and (max-width: 900px) {
     main .section {

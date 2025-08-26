@@ -38,6 +38,14 @@ main ul, main ol {
 .mt3rem {
     margin-top: 3rem;
 }
+.wm12 {
+    width: 1200px;
+    margin: auto;
+}
+.wm9 {
+    width: 900px;
+    margin: auto;
+}
 img.mgma-logo-style-one {
     display: block;
     width: 180px;
@@ -60,4 +68,16 @@ a.button-style-one {
 .horizontal-divider-one {
     border: 0;
     border-top: 1px solid lightgray;
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+    .wm12 {
+        width: 96%;
+    }  
+}
+@media screen and (max-width: 900px) {
+    .wm9 {
+        width: 96%;
+    }
 }

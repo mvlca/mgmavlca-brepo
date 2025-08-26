@@ -1,0 +1,28 @@
+<div class="vlca-noticeboard-container">
+    <div class="vlca-noticeboard">
+        <h2><span class="material-symbols-outlined">pinboard</span>&ensp;<a href="/notices/">VLCA Noticeboard</a></h2>
+        <section>
+            {{ $notices := where .Site.RegularPages "Section" "notices" }}
+            {{ $pages :=  first 3 ($notices.ByWeight).ByDate.Reverse }}
+            {{ range $pages }}
+            <article>
+                <h3><span class="material-symbols-outlined">keep</span>&ensp;<a href="{{ .RelPermalink }}" class="list-title">{{ .LinkTitle }}</a></h3>
+                <summary>
+                    {{ if .Description }}
+                        {{ .Description }}
+                    {{ else }}
+                        {{ .Summary | plainify | truncate 180 }}
+                    {{ end }}
+                </summary>
+                <div class="time-readmore">
+                    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+                    {{ $dateHuman := .Date | time.Format ":date_long" }}
+                    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                    <div><a href="{{ .RelPermalink }}" class="read-more">READ MORE</a></div>
+                </div>
+            </article>
+            {{ end }}
+        </section>
+        <div class="see-all"><a href="/notices/">See All <i class="fa-solid fa-arrow-right"></i></a></div>
+    </div>
+</div>
