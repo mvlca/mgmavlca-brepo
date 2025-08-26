@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="section">
+    <section>
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+        {{ $pages := (.Pages.ByWeight).ByDate.Reverse }}
+        {{ $paginator := .Paginate $pages 9 }}
+        {{ range $paginator.Pages }}
+        <article>
+            <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+            {{ .Description }}
+        </article>
+        {{ end }}
+        <div class="pagination-wrapper">
+            {{ partial "pagination.html" . }}
+        </div>
+        <div>&nbsp;</div>
+    </section>
+</div>
+{{ end }}

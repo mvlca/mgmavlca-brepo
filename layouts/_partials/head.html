@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+
+<link rel="stylesheet" href="/fonts/awesome/css/fontawesome.css">
+<link rel="stylesheet" href="/fonts/awesome/css/solid.css">
+<link rel="stylesheet" href="/fonts/awesome/css/brands.css">
+
+{{ partialCached "head/base.html" . }}
+{{ partialCached "head/header.html" . }}
+{{ partialCached "head/footer.html" . }}
+
+{{ if .IsHome }}
+    {{ partialCached "head/home.html" . }}
+{{ else if .IsPage }}
+    {{ partialCached "head/page.html" . }}
+    {{ if eq .Params.page.add "form" }}
+        {{ partialCached "head/form.html" . }}
+    {{ else if eq .Params.page.add "grades" }}
+        {{ partialCached "head/grades.html" . }}
+    {{ else if eq .Params.page.add "flist" }}
+        {{ partialCached "head/flist.html" . }}
+    {{ end }}
+{{ else if .IsSection }}
+    {{ partialCached "head/section.html" . }}
+{{ end }}

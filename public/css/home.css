@@ -1,0 +1,76 @@
+.home-block-container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.home-block-container.mandatory .mgma-logo-one {
+    display: none;
+}
+.home-block-container.mandatory .text {
+    margin-right: 3rem;
+}
+.home-block-container.mandatory .text div {
+    margin-bottom: 1rem;
+}
+.home-block-container.mandatory .text div:first-child {
+    font-size: 2.7rem;
+}
+.home-block-container.mandatory .text div:nth-child(2) {
+    font-size: 2rem;
+}
+.home-block-container.mandatory .text div:nth-child(3) {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.home-block-container.mandatory .text div:nth-child(4) {
+    line-height: 1.5;
+}
+.home-block-container.mandatory .text .form-button,
+.home-block-container.mandatory .text .upload-button {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: darkslategray;
+    text-decoration: none;
+    color: snow;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+.home-block-container.mandatory .text .form-button:hover,
+.home-block-container.mandatory .text .upload-button:hover {
+    background-color: darkgray;
+}
+.home-block-container.manual div:first-child {
+    margin-right: 3rem;
+}
+.home-block-container.manual div:nth-child(2) {
+    align-self: flex-start;
+}
+.home-block-container.manual div:nth-child(2) ol {
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 1200px) {
+    .home-block-container {
+        width: 100%;
+        padding: 0 2rem;
+        flex-wrap: wrap;
+    }
+    .home-block-container.mandatory .mgma-logo-one {
+        display: block;
+    }
+    .home-block-container.mandatory .mgma-logo-two {
+        display: none;
+    }
+    .home-block-container.manual div:first-child {
+        margin: 2rem 0;
+    }
+    .home-block-container.manual iframe {
+        width: 100%;
+        height: auto;
+    }
+}

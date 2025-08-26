@@ -1,0 +1,18 @@
+main .section {
+    width: 900px;
+    margin: auto;
+    line-height: 1.5;
+}
+main .section article {
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    main .section {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
