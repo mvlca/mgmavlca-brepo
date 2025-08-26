@@ -1,1 +1,0 @@
-(()=>{document.addEventListener("click",function(t){let e=document.querySelector("header .menubar");if(t.target.closest("#mobileMenuButton")){e.style.display="block";return}if(t.target.closest("#mobileMenuClose")){e.style.display="none";return}e.style.display==="block"&&!e.contains(t.target)&&(e.style.display="none")});})();
