@@ -59,19 +59,19 @@ document.getElementById('vlcaForm').addEventListener('submit', function(event) {
         mode: 'no-cors'
     }).then(() => {
         document.getElementById('googleFormUpdated').style.display = 'block';
-        // Setting Timeout before block views change
-        setTimeout(() => {
-            // show #afterFormSubmit, scroll to Top and hide #formContainer
-            document.getElementById('afterFormSubmit').style.display = 'block';
-            document.getElementById('formContainer').style.display = 'none';
-            window.scrollTo({top: 0, left: 0});
-            submitButton.innerHTML = originalText;
-            submitButton.disabled = false;
-            submitButton.classList.remove('disabled');
-        }, 500);
     }).catch(error => {
         alert("There was an error of updating Google Form.");
     });
+    // Setting Timeout before block views change
+    setTimeout(() => {
+        // show #afterFormSubmit, scroll to Top and hide #formContainer
+        document.getElementById('afterFormSubmit').style.display = 'block';
+        document.getElementById('formContainer').style.display = 'none';
+        window.scrollTo({top: 0, left: 0});
+        submitButton.innerHTML = originalText;
+        submitButton.disabled = false;
+        submitButton.classList.remove('disabled');
+    }, 1000);
 });
 
 document.addEventListener("click", function (e) {
