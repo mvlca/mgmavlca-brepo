@@ -70,7 +70,8 @@ document.getElementById('vlcaForm').addEventListener('submit', function(event) {
             submitButton.classList.remove('disabled');
         }, 500);
     }).catch(error => {
-        alert("There was an error of updating Google Form.");
+        alert("There was an error updating Google Form. The page will reload.");
+        location.reload();
     });
 });
 
