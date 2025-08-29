@@ -53,6 +53,25 @@
 .home-block-container.manual div:nth-child(2) ol {
     line-height: 1.8;
 }
+.responses-data-overview, .factories-list-completed {
+    flex: 0 0 47%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.responses-data-overview div:first-child,
+.factories-list-completed div:first-child {
+    flex: 0 0 30%;
+}
+.responses-data-overview div:nth-child(2),
+.factories-list-completed div:nth-child(2) {
+    flex: 0 0 65%;
+}
+.home-block-container.static a {
+    text-decoration: none;
+    color: darkslateblue;
+}
+
 .vlca-noticeboard-container {
     padding: 3rem 1rem;
 }
@@ -124,6 +143,10 @@
     .home-block-container.manual iframe {
         width: 100%;
         height: auto;
+    }
+    .responses-data-overview, .factories-list-completed {
+        flex: 0 0 100%;
+        margin: 2rem 0;
     }
     .vlca-noticeboard {
         width: 100%;
