@@ -10,19 +10,24 @@ VLCA Submission Form ကို ဖြည့်ပြီး ရလာတဲ့ PD
 {{< /warning >}}
 {{< /outer-container >}}
 
-{{< include-partial "home/block-one.html" >}}
+{{< include-partial "home/mandatory.html" >}}
 
 ---
 {class="horizontal-divider-one mb1rem"}
 
-{{< include-partial "home/block-two.html" >}}
+{{< include-partial "home/grades.html" >}}
 
 ---
 {class="horizontal-divider-one mb1rem"}
 
-{{< include-partial "home/block-three.html" >}}
+{{< include-partial "home/manual.html" >}}
 
 ---
 {class="horizontal-divider-one mb1rem"}
 
-{{< include-partial "home/notices-section.html" >}}
+{{< include-partial "home/records.html" >}}
+
+---
+{class="horizontal-divider-one mb1rem"}
+
+{{< include-partial "home/notices.html" >}}

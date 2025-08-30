@@ -44,6 +44,25 @@
 .home-block-container.mandatory .text .upload-button:hover {
     background-color: darkgray;
 }
+.home-block-container.grades a {
+    display: block;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+table.vlca-compliance-grades {
+    width: 100%;
+    table-layout: fixed;
+    margin: 0;
+}
+table.vlca-compliance-grades .text-tds {
+    background-color: lightgray;
+}
+table.vlca-compliance-grades tr td {
+    padding: 0.5rem 0;
+    text-align: center;
+}
 .home-block-container.manual div:first-child {
     margin-right: 3rem;
 }
@@ -67,7 +86,7 @@
 .factories-list-completed div:nth-child(2) {
     flex: 0 0 65%;
 }
-.home-block-container.static a {
+.home-block-container.records a {
     text-decoration: none;
     color: darkslateblue;
 }
@@ -116,6 +135,7 @@
 }
 .vlca-noticeboard .time-readmore .read-more {
     font-weight: 600;
+    font-size: 1rem;
 }
 .vlca-noticeboard .see-all {
     text-align: center;
