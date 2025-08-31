@@ -2,6 +2,7 @@
 date = '2025-08-22T10:29:18+06:30'
 draft = false
 title = 'VLCA Upload'
+description = 'Upload required documents after completion of VLCA Submission Form.'
 layout = 'plainpage'
 +++
 
