@@ -1,0 +1,29 @@
+.see-container {
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+.see-container h3 {
+    scroll-margin-top: 6rem;
+}
+.see-container i.fa-solid.fa-link {
+    color: lightgray;
+    margin-left: 0.75rem;
+    cursor: pointer;
+}
+.see-container i.fa-solid.fa-link:hover {
+    color: gray;
+}
+.see-container .legal-reference {
+    display: block;
+    color: darkslateblue;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+.see-container .legal-reference:hover {
+    color: slateblue;
+}
+.see-container .legal-reference i.fa-solid.fa-arrow-right {
+    margin-right: 0.5rem;
+}

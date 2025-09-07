@@ -28,6 +28,10 @@
         {{ partialCached "head/grades.html" . }}
     {{ else if eq .Params.page.add "flist" }}
         {{ partialCached "head/flist.html" . }}
+    {{ else if eq .Params.page.add "see" }}
+        {{ partialCached "head/see.html" . }}
+    {{ else if eq .Params.page.add "search" }}
+        {{ partialCached "head/search.html" . }}
     {{ end }}
 {{ else if .IsSection }}
     {{ partialCached "head/section.html" . }}

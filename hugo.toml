@@ -36,6 +36,10 @@ title = 'MGMAVLCA'
         pageRef = '/notices'
         weight = 5
     [[menus.main]]
+        name = 'See'
+        pageRef = '/see'
+        weight = 6
+    [[menus.main]]
         name = 'About'
         pageRef = '/about'
-        weight = 6
+        weight = 7
