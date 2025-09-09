@@ -5,6 +5,4 @@ title = 'Visualized Responses Data Overview 2025'
 description = 'Visualized data overview of responses by the factories that completed MGMA VLCA Submission Form for 2025.'
 +++
 
-{{< include-partial "misc/go-back.html" >}}
-
 {{< include-partial "records/rsd-2025.html" >}}

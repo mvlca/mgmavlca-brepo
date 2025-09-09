@@ -1,0 +1,82 @@
+.complain {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+.complain-mail-box {
+    position: relative;
+    width: 20rem;
+}
+.mail-box-mgma-logo {
+    position: absolute;
+    width: 5rem;
+    right: 3.25rem;
+    top: 6.25rem;
+}
+.confirmed-message {
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: lightyellow;
+    display: none;
+}
+#close-confirmed-message {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: darkgray;
+}
+#close-confirmed-message:hover {
+    color: black;
+}
+.confirmed-message p {
+    margin: 0;
+    line-height: 1.8;
+}
+.reset-form {
+    padding: 3px 6px;
+    float: right;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    color: darkred;
+}
+#complainForm label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+#complainForm input, #complainForm textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: inherit;
+}
+#complainForm textarea {
+    min-width: 100%;
+    max-width: 100%;
+}
+#complainForm label span.ast {
+    color: red;
+}
+#submitComplaint {
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+    background-color: darkslateblue;
+    color: snow;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#submitComplaint:hover {
+    background-color: darkgray;
+}
+#submitComplaint.disabled {
+    background-color: darkgray;
+}

@@ -7,8 +7,6 @@ description = 'The factories list completed MGMA VLCA through VLCA Submission Fo
     add = 'flist'
 +++
 
-{{< include-partial "misc/go-back.html" >}}
-
 The following factories completed the VLCA Submission Form in 2025.
 
 {{< include-partial "records/flist-temp-2025.html" >}}

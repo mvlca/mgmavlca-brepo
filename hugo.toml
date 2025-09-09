@@ -24,22 +24,10 @@ title = 'MGMAVLCA'
         pageRef = '/upload'
         weight = 2
     [[menus.main]]
-        name = 'Grades'
-        pageRef = '/grades'
+        name = 'Docs'
+        pageRef = '/docs'
         weight = 3
     [[menus.main]]
-        name = 'Records'
-        pageRef = '/records'
+        name = 'Complain'
+        pageRef = '/complain'
         weight = 4
-    [[menus.main]]
-        name = 'Notices'
-        pageRef = '/notices'
-        weight = 5
-    [[menus.main]]
-        name = 'See'
-        pageRef = '/see'
-        weight = 6
-    [[menus.main]]
-        name = 'About'
-        pageRef = '/about'
-        weight = 7

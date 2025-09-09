@@ -3,6 +3,7 @@ date = '2025-08-22T14:04:52+06:30'
 draft = false
 title = 'VLCA Compliance Grades'
 description = 'MGMA VLCA Compliance Grades are Higher Compliance, Full Compliance, Partial Compliance and Non Compliance.'
+weight = 2
 [params.page]
     add = 'grades'
 +++

@@ -2,8 +2,11 @@
     <div class="vlca-noticeboard">
         <h2><span class="material-symbols-outlined">pinboard</span>&ensp;<a href="/notices/">VLCA Noticeboard</a></h2>
         <section>
-            {{ $notices := where .Site.RegularPages "Section" "notices" }}
-            {{ $pages :=  first 3 ($notices.ByWeight).ByDate.Reverse }}
+            {{/*
+                {{ $notices := where .Site.RegularPages "Section" "docs/notices" }}
+            */}}
+            {{ with .Site.GetPage "docs/notices" }}
+            {{ $pages := first 3 (.Pages.ByDate.Reverse).ByWeight }}
             {{ range $pages }}
             <article>
                 <h3><span class="material-symbols-outlined">keep</span>&ensp;<a href="{{ .RelPermalink }}" class="list-title">{{ .LinkTitle }}</a></h3>
@@ -22,7 +25,8 @@
                 </div>
             </article>
             {{ end }}
+            {{ end }}
         </section>
-        <div class="see-all"><a href="/notices/">See All <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="see-all"><a href="/docs/notices/">See All <i class="fa-solid fa-arrow-right"></i></a></div>
     </div>
 </div>

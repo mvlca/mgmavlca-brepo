@@ -1,9 +1,14 @@
 {{ define "main" }}
 <div class="section">
+    {{ partial "misc/go-back.html" . }}
     <section>
         <h1>{{ .Title }}</h1>
         {{ .Content }}
-        {{ $pages := (.Pages.ByWeight).ByDate.Reverse }}
+        {{/*
+            This was commented for weight sorting first.
+            {{ $pages := (.Pages.ByWeight).ByDate.Reverse }}
+        */}}
+        {{ $pages := (.Pages.ByDate.Reverse).ByWeight }}
         {{ $paginator := .Paginate $pages 9 }}
         {{ range $paginator.Pages }}
         <article>

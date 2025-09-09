@@ -32,9 +32,14 @@
         {{ partialCached "head/see.html" . }}
     {{ else if eq .Params.page.add "search" }}
         {{ partialCached "head/search.html" . }}
+    {{ else if eq .Params.page.add "complain" }}
+        {{ partialCached "head/complain.html" . }}
     {{ end }}
 {{ else if .IsSection }}
     {{ partialCached "head/section.html" . }}
+    {{ if eq .Params.section.add "see" }}
+        {{ partialCached "head/see.html" . }}
+    {{ end }}
 {{ end }}
 
 {{ if .HasShortcode "warning" }}
