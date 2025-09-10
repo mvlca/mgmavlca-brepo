@@ -7,7 +7,7 @@ main {
     min-height: 100vh;
     color: #222;
     font-size: 1.25rem;
-    padding-top: 5rem;
+    padding-top: 4.5rem;
     padding-bottom: 3rem;
     background-color: whitesmoke;
 }
@@ -78,6 +78,10 @@ a.button-style-one {
 .go-back a {
     font-size: 1rem;
     text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #e5e5e5;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 /* media query */

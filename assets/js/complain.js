@@ -1,6 +1,6 @@
 const confirmedMsg = document.querySelector('.confirmed-message');
 
-document.getElementById('complainForm').addEventListener('submit', function(event) {
+document.getElementById('complaintForm').addEventListener('submit', function(event) {
 
     event.preventDefault();
 
@@ -31,7 +31,7 @@ document.getElementById('complainForm').addEventListener('submit', function(even
         submitButton.innerHTML = originalText;
         submitButton.classList.remove('disabled');
     }, 6000);
-    document.getElementById('complainForm').reset();
+    document.getElementById('complaintForm').reset();
 });
 
 document.getElementById('close-confirmed-message').addEventListener('click', () => {
