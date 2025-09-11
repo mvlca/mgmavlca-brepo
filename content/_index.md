@@ -25,6 +25,11 @@ VLCA Submission Form ကို ဖြည့်ပြီး ရလာတဲ့ PD
 ---
 {class="horizontal-divider-one mb1rem"}
 
+{{< include-partial "home/see-recommendations.html" >}}
+
+---
+{class="horizontal-divider-one mb1rem"}
+
 {{< include-partial "home/records.html" >}}
 
 ---

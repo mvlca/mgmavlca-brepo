@@ -27,3 +27,7 @@
 .see-container .legal-reference i.fa-solid.fa-arrow-right {
     margin-right: 0.5rem;
 }
+.see-more, .see-also {
+    text-decoration: none;
+    color: darkslateblue;
+}

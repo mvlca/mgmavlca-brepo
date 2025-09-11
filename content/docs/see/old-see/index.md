@@ -8,7 +8,7 @@ description = 'See: corrections, recommendations, comments and others for VLCA F
 +++
 
 {{< warning >}}
-This page was migrated from old site and is no longer updated. Please, refer to {{< inner-html >}}<a href="/see/">https://h.mgmavlca.com/see/</a>{{< /inner-html >}} page in future.
+This page was migrated from old site and is no longer updated. Please, refer to {{< inner-html >}}<a href="/docs/see/">https://h.mgmavlca.com/docs/see/</a>{{< /inner-html >}} page in future.
 {{< /warning >}}
 
 {{< include-partial "see/old-see.html" >}}

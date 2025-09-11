@@ -107,6 +107,28 @@ table.vlca-compliance-grades tr.text-tds {
 .home-block-container.manual div:nth-child(2) ol {
     line-height: 1.8;
 }
+/* See: Recommendations */
+.home-block-container.see .see-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    color: #222;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+.home-block-container.see .see-svg {
+    flex: 0 0 20%;
+    line-height: 0;
+}
+.home-block-container.see .see-text {
+    flex: 0 0 75%;
+    line-height: 1.8;
+}
 /* Records */
 .responses-data-overview, .factories-list-completed {
     flex: 0 0 47%;
@@ -203,6 +225,13 @@ table.vlca-compliance-grades tr.text-tds {
     .home-block-container.manual iframe {
         width: 100%;
         height: auto;
+    }
+    .home-block-container.see .see-wrapper {
+        margin-bottom: 1rem;
+    }
+    .home-block-container.see .see-svg,
+    .home-block-container.see .see-text {
+        flex: 0 0 95%;
     }
     .responses-data-overview, .factories-list-completed {
         flex: 0 0 100%;
