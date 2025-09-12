@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0;
 }
+h1 {font-size: 2.25rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.75rem;}
+h4 {font-size: 1.5rem;}
+h5 {font-size: 1.38rem;}
+h6 {font-size: 1.25rem;}
 main {
     min-height: 100vh;
     color: #222;
@@ -10,6 +16,7 @@ main {
     padding-top: 4.5rem;
     padding-bottom: 3rem;
     background-color: whitesmoke;
+    overflow-wrap: break-word;
 }
 main h1, main h2, main h3, main h4, main h5, main p, main ul, main ol, main table {
     margin-bottom: 1rem;

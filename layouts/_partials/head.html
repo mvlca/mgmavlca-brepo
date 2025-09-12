@@ -4,9 +4,27 @@
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }} {{ else }}Voluntary Labor Compliance Assessment (VLCA){{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}/images/mgma-logo-0.png{{ end }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }} {{ else }}Voluntary Labor Compliance Assessment (VLCA){{ end }}">
+<meta name="twitter:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}/images/mgma-logo-0.png{{ end }}">
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="/favicon/site.webmanifest" />
 
 <link rel="stylesheet" href="/fonts/awesome/css/fontawesome.css">
 <link rel="stylesheet" href="/fonts/awesome/css/solid.css">
