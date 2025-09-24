@@ -9,7 +9,7 @@ layout = 'plainpage'
 +++
 
 {{< warning class="warning lhi18" >}}
-ဤ Form ကို ဖြည့်၊ Submit ကိုနှိပ်ပြီး နောက်ရောက်မည့် စာမျက်နှာတွင် Download*** ဆိုတာကိုထပ်နှိပ်ပါ။ ဖိုင်တစ်ခုကို Download ဆွဲယူရရှိပါလိမ့်မည်။ ၎င်းဖိုင်ကို mgmavlca@gmail.com သို့ အရင် email ပို့ပေးပါ။ Documents upload တင်တာ သို့မဟုတ် Documents email ပို့တာကို နောက်မှ အချိန်ယူဆောင်ရွက်ပါ။
+ဤ Form ကို ဖြည့်၊ Submit ကိုနှိပ်ပြီး နောက်ရောက်မည့် စာမျက်နှာတွင် Download*** ဆိုတာကိုထပ်နှိပ်ပါ။ ဖိုင်တစ်ခုကို Download ဆွဲယူရရှိပါလိမ့်မည်။ ၎င်းဖိုင်ကို mgmavlca@gmail.com သို့ အရင် email ပို့ပေးပါ။ Documents upload တင်ခြင်း သို့မဟုတ် Documents email ပို့ခြင်းကို နောက်မှ အချိန်ယူဆောင်ရွက်ပါ။
 {{< /warning >}}
 
 {{< include-partial "form/form.html" >}}

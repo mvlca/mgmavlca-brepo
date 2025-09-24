@@ -4,12 +4,13 @@
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
-<link rel="canonical" href="{{ .Permalink }}" />
+<!-- <link rel="canonical" href="{{ .Permalink }}" /> -->
+<link rel="canonical" href="https://mgmavlca.com{{ .RelPermalink }}">
 
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }} {{ else }}Voluntary Labor Compliance Assessment (VLCA){{ end }}">
-<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:url" content="https://mgmavlca.com{{ .RelPermalink }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}/images/mgma-logo-0.png{{ end }}">
 
