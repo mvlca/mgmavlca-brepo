@@ -7,15 +7,16 @@
         <span id="close-confirmed-message">&times;</span>
         <p>တိုင်ကြားချက်ကို လက်ခံရရှိပါသည်။ လိုအပ်သလို ဆက်လက်ဆောင်ရွက်ပေးပါမယ်။</p>
         <p>The complaint has been well received and the process will continue as required.</p>
+        <p class="close-this">နောက်ထပ်တိုင်ကြားမှုအသစ်ပို့ရန် ဒါကို ပိတ်ပါ။ Close this for new complaint.</p>
     </div>
-    <form id="complaintForm" action="https://docs.google.com/forms/d/e/1FAIpQLSc7sKhWwnd1JAtCPm4yeMkpD59G-9f5nnMSb_LU5Br1pry8WA/formResponse" target="_blank">
+    <form id="complaintForm" action="https://complain-form-submit.mgmavlca.workers.dev/submit" method="POST">
         <button type="reset" class="reset-form">Clear All</button>
-        <label for="entry.1418517009">အမည် (Name)</label>
-        <input type="text" name="entry.1418517009" placeholder="အမည် (Name)" autocomplete="off">
-        <label for="entry.653377616">ဖုန်းနံပါတ် (Phone No.)</label>
-        <input type="text" name="entry.653377616" placeholder="ဖုန်းနံပါတ် (Phone No.)" autocomplete="off">
-        <label for="entry.1257843074">တိုင်ကြားချက် (Complaint) <span class="ast">&ast;</span></label>
-        <textarea name="entry.1257843074" rows="6" placeholder="တိုင်ကြားချက် အကြောင်းအရာ (complaint description)" required autocomplete="off"></textarea>
-        <button type="submit" id="submitComplaint">တိုက်ကြားချက်ပို့မည် (Submit)</button>
+        <label for="entry.1952372902">အမည် (Name)</label>
+        <input type="text" name="entry.1952372902" placeholder="အမည် (Name)" autocomplete="off">
+        <label for="entry.1754947599">ဖုန်းနံပါတ် (Phone No.)</label>
+        <input type="text" name="entry.1754947599" placeholder="ဖုန်းနံပါတ် (Phone No.)" autocomplete="off">
+        <label for="entry.366446083">တိုင်ကြားချက် (Complaint) <span class="ast">&ast;</span></label>
+        <textarea name="entry.366446083" rows="6" placeholder="တိုင်ကြားချက် အကြောင်းအရာ (complaint description)" required autocomplete="off"></textarea>
+        <button type="submit" id="submitComplaint">တိုင်ကြားချက်ပို့မည် (Submit)</button>
     </form>
 </div>

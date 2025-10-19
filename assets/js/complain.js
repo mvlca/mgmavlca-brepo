@@ -1,41 +1,34 @@
-const confirmedMsg = document.querySelector('.confirmed-message');
-
-document.getElementById('complaintForm').addEventListener('submit', function(event) {
-
+document.getElementById('complaintForm').addEventListener('submit', async (event) => {
+    
     event.preventDefault();
-
+    
+    const confirmedMsg = document.querySelector('.confirmed-message');
     const submitButton = document.getElementById('submitComplaint');
     const originalText = submitButton.innerHTML;
     submitButton.innerHTML = "Please, wait...";
     submitButton.classList.add('disabled');
     submitButton.disabled = true;
 
-
-    fetch(event.target.action, {
-        method: 'POST',
-        body: new FormData(event.target),
-        mode: 'no-cors'
-    }).then(() => {
-        setTimeout (() => {
+    const form = event.target;
+    const res = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form)
+    });
+    if (res.ok) {
+        form.reset();
+        setTimeout(() => {
             if (confirmedMsg.style.display === 'none' || confirmedMsg.style.display === '') {
                 confirmedMsg.style.display = 'block';
+                window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
             }
         }, 500);
-    }).catch(error => {
-        alert("There was an error of updating Google Form.");
-    });
-    setTimeout (() => {
-        if (confirmedMsg.style.display === 'block') {
-            confirmedMsg.style.display = 'none';
-        }
+    }
+
+    const closeComMsg = document.getElementById('close-confirmed-message');
+    closeComMsg.addEventListener('click', () => {
+        confirmedMsg.style.display = 'none';
         submitButton.innerHTML = originalText;
         submitButton.classList.remove('disabled');
-    }, 6000);
-    document.getElementById('complaintForm').reset();
-});
-
-document.getElementById('close-confirmed-message').addEventListener('click', () => {
-    if (confirmedMsg.style.display === 'block') {
-        confirmedMsg.style.display = 'none';
-    }
+        submitButton.disabled = false;
+    });
 });

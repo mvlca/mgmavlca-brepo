@@ -19,6 +19,9 @@
     background-color: lightyellow;
     display: none;
 }
+.confirmed-message .close-this {
+    color: red;
+}
 #close-confirmed-message {
     position: absolute;
     top: 0;
