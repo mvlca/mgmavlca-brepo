@@ -1,6 +1,13 @@
 document.getElementById('complaintForm').addEventListener('submit', async (event) => {
     
     event.preventDefault();
+
+    // const sS = "mGmacomPlaint@25ocT20";
+    // const fI = "1FAIpQLSeQ_LhK7-sjHEZDb7LL3vXO6VifA66lFvsN6QQ5viUR9cBmag";
+
+    // const formData = new FormData(event.target);
+    // formData.set("entry.915684076", `${sS}`);
+    // const cpS = `https://docs.google.com/forms/d/e/${fI}/formResponse`;
     
     const confirmedMsg = document.querySelector('.confirmed-message');
     const submitButton = document.getElementById('submitComplaint');
@@ -14,15 +21,26 @@ document.getElementById('complaintForm').addEventListener('submit', async (event
         method: "POST",
         body: new FormData(form)
     });
+
+    // await fetch(cpS, {
+    //     method: "POST",
+    //     body: formData,
+    //     mode: "no-cors"
+    // });
+
     if (res.ok) {
         form.reset();
-        setTimeout(() => {
-            if (confirmedMsg.style.display === 'none' || confirmedMsg.style.display === '') {
-                confirmedMsg.style.display = 'block';
-                window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-            }
-        }, 500);
+        confirmedMsg.style.display = 'block';
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }
+
+    // setTimeout(() => {
+    //     document.getElementById('complaintForm').reset();
+    //     if (confirmedMsg.style.display === 'none' || confirmedMsg.style.display === '') {
+    //         confirmedMsg.style.display = 'block';
+    //         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    //     }
+    // }, 500);
 
     const closeComMsg = document.getElementById('close-confirmed-message');
     closeComMsg.addEventListener('click', () => {

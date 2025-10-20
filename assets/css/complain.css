@@ -63,6 +63,9 @@
 #complaintForm label span.ast {
     color: red;
 }
+#complaintForm input[name="entry.48974302"] {
+    display: none;
+}
 #submitComplaint {
     display: block;
     width: 100%;
