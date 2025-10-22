@@ -4,6 +4,10 @@
 }
 .see-container h3 {
     scroll-margin-top: 6rem;
+    cursor: pointer;
+}
+.see-container h3:hover {
+    color: #339;
 }
 .see-container i.fa-solid.fa-link {
     color: lightgray;

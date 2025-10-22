@@ -61,12 +61,39 @@ table.vlca-compliance-grades td {
     padding: 0.5rem 0;
     text-align: center;
 }
-table.vlca-compliance-grades .grades-td {
+table.vlca-compliance-grades .vlca-tds {
     font-size: 9rem;
     line-height: 1;
-    color: #666;
 }
-table.vlca-compliance-grades tr.grades-td,
+table.vlca-compliance-grades tr.vlca-tds td:first-child {
+    background: linear-gradient(to right, #000000, #FF0000);
+    -webkit-background-clip: text; /* for Safari/Chrome */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* modern browsers */
+    color: transparent; /* fallback */
+}
+table.vlca-compliance-grades tr.vlca-tds td:nth-child(2) {
+    background: linear-gradient(to right, #FF8000, #FFFF00);
+    -webkit-background-clip: text; /* for Safari/Chrome */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* modern browsers */
+    color: transparent; /* fallback */
+}
+table.vlca-compliance-grades tr.vlca-tds td:nth-child(3) {
+    background: linear-gradient(to right, #81D41A, #00A933);
+    -webkit-background-clip: text; /* for Safari/Chrome */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* modern browsers */
+    color: transparent; /* fallback */
+}
+table.vlca-compliance-grades tr.vlca-tds td:nth-child(4) {
+    background: linear-gradient(to right, #55308D, #800080);
+    -webkit-background-clip: text; /* for Safari/Chrome */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* modern browsers */
+    color: transparent; /* fallback */
+}
+table.vlca-compliance-grades tr.vlca-tds,
 table.vlca-compliance-grades tr.text-tds {
     background-color: lightgray;
 }
@@ -189,8 +216,8 @@ table.vlca-compliance-grades tr.text-tds {
     .home-block-container.mandatory .mgma-logo-two {
         display: none;
     }
-    table.vlca-compliance-grades .grades-td {
-        font-size: 15vw; /* GRADES */
+    table.vlca-compliance-grades .vlca-tds {
+        font-size: 15vw; /* Grades Table */
     }
     .home-block-container.manual div:first-child {
         margin: 2rem 0;
