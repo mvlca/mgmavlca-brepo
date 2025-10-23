@@ -6,16 +6,10 @@
     scroll-margin-top: 6rem;
     cursor: pointer;
 }
-.see-container h3:hover {
-    color: #339;
-}
 .see-container i.fa-solid.fa-link {
     color: lightgray;
     margin-left: 0.75rem;
     cursor: pointer;
-}
-.see-container i.fa-solid.fa-link:hover {
-    color: gray;
 }
 .see-container .legal-reference {
     display: block;
@@ -25,13 +19,22 @@
     margin-top: -0.5rem;
     margin-bottom: 1rem;
 }
-.see-container .legal-reference:hover {
-    color: slateblue;
-}
 .see-container .legal-reference i.fa-solid.fa-arrow-right {
     margin-right: 0.5rem;
 }
 .see-more, .see-also {
     text-decoration: none;
     color: darkslateblue;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .see-container h3:hover {
+        color: #339;
+    }
+    .see-container i.fa-solid.fa-link:hover {
+        color: gray;
+    }
+    .see-container .legal-reference:hover {
+        color: slateblue;
+    }
 }
