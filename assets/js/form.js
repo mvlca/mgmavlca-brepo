@@ -43,7 +43,7 @@ document.getElementById('vlcaForm').addEventListener('submit', function(event) {
     // signing
     const sigKeyGot = document.querySelector('input[name="entry.71647187"]').value;
     // String().trim is required for ensuring both are string
-    if (String(sigKeyGot).trim() !== String(generatedSigKey).trim()) {
+    if (String(sigKeyGot).toLowerCase().trim() !== String(generatedSigKey).toLowerCase().trim()) {
         alert("Oops! Your signature key does not match. Please generate it again and, copy and paste it correctly.");
         return;
     }
