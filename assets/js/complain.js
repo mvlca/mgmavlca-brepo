@@ -1,13 +1,6 @@
 document.getElementById('complaintForm').addEventListener('submit', async (event) => {
     
     event.preventDefault();
-
-    // const sS = "mGmacomPlaint@25ocT20";
-    // const fI = "1FAIpQLSeQ_LhK7-sjHEZDb7LL3vXO6VifA66lFvsN6QQ5viUR9cBmag";
-
-    // const formData = new FormData(event.target);
-    // formData.set("entry.915684076", `${sS}`);
-    // const cpS = `https://docs.google.com/forms/d/e/${fI}/formResponse`;
     
     const confirmedMsg = document.querySelector('.confirmed-message');
     const submitButton = document.getElementById('submitComplaint');

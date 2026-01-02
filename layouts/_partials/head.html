@@ -42,7 +42,9 @@
 {{ else if .IsPage }}
     {{ partialCached "head/page.html" . }}
     {{ if eq .Params.page.add "form" }}
-        {{ partialCached "head/form.html" . }}
+        {{ partialCached "head/form/form.html" . }}
+    {{ else if eq .Params.page.add "form-2026" }}
+        {{ partialCached "head/form/form-2026.html" . }}
     {{ else if eq .Params.page.add "grades" }}
         {{ partialCached "head/grades.html" . }}
     {{ else if eq .Params.page.add "flist" }}

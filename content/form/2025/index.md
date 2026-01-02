@@ -1,7 +1,7 @@
 +++
 date = '2025-08-19T18:12:31+06:30'
 draft = false
-title = 'VLCA Submission Form'
+title = 'VLCA Submission Form 2025'
 description = 'Fill out the VLCA Submission Form, and then send the PDF file you receive to the email address mgmavlca@gmail.com.'
 layout = 'plainpage'
 [params.page]
