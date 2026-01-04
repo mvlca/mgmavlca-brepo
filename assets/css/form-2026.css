@@ -107,3 +107,7 @@ button#printSaveAsPDF {
     display: none;
     margin-bottom: 2vh;
 }
+
+.question-text, .yes-i-do {
+    margin-bottom: 0.5rem;
+}
