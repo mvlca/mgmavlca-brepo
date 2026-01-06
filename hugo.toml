@@ -31,3 +31,7 @@ title = 'MGMAVLCA'
         name = 'Complain'
         pageRef = '/complain'
         weight = 4
+    [[menus.main]]
+        name = 'ao'
+        pageRef = '/ao'
+        weight = 5

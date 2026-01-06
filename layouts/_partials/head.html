@@ -45,6 +45,8 @@
         {{ partialCached "head/form/form.html" . }}
     {{ else if eq .Params.page.add "form-2026" }}
         {{ partialCached "head/form/form-2026.html" . }}
+    {{ else if eq .Params.page.add "conduct-assessment" }}
+        {{ partialCached "head/form/conduct-assessment.html" . }}
     {{ else if eq .Params.page.add "grades" }}
         {{ partialCached "head/grades.html" . }}
     {{ else if eq .Params.page.add "flist" }}
