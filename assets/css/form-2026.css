@@ -63,6 +63,10 @@ fieldset {
     margin-bottom: 20px;
 }
 
+legend {
+    padding: 0 6px;
+}
+
 button {
     cursor: pointer;
 }
