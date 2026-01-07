@@ -95,16 +95,7 @@
         <fieldset id="employmentRelations">
             <legend>Employment Relations</legend>
             <label for="erGrade">Grade:</label>
-            <select name="{{ $ERGrade }}" id="erGrade" class="grade-selector" required>
-                <option value="">--- Select ---</option>
-                <option value="hahb">Higher Higher</option>
-                <option value="fbha">Full Higher</option>
-                <option value="fafb">Full Full</option>
-                <option value="pbfa">Partial Full</option>
-                <option value="papb">Partial Partial</option>
-                <option value="nbpa">Non Partial</option>
-                <option value="nanb">Non Non</option>
-            </select>
+            <input name="{{ $ERGrade }}" type="text" id="reGrade">
             <table class="grade">
                 <tr>
                     <td colspan="2">Non</td>
@@ -113,32 +104,44 @@
                     <td colspan="2">Higher</td>
                 </tr>
                 <tr>
-                    <td class="gna"></td>
-                    <td class="gnb"></td>
-                    <td class="gpa"></td>
-                    <td class="gpb"></td>
-                    <td class="gfa"></td>
-                    <td class="gfb"></td>
-                    <td class="gha"></td>
-                    <td class="ghb"></td>
+                    <td>
+                        <input type="checkbox" value="na" id="gNa">
+                        <label for="gNa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="nb" id="gNb">
+                        <label for="gNb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pa" id="gPa">
+                        <label for="gPa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pb" id="gPb">
+                        <label for="gPb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fa" id="gFa">
+                        <label for="gFa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fb" id="gFb">
+                        <label for="gFb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="ha" id="gHa">
+                        <label for="gHa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="hb" id="gHb">
+                        <label for="gHb" class="grade-checkbox-label"></label>
+                    </td>
                 </tr>
             </table>
             <div class="assessment-part">
                 <label for="erTR">Tags & References:</label>
                 <input name="{{ $ERTR }}" type="text" id="erTR">
-                <div class="tags-references-toggle">&plus;</div>
-                <div class="tags-references-ctn">
-                    <div class="tr-title">Employment Relationship</div>
-                    <template id="erTrTemplate">
-                        <div class="each-tr-ctn">
-                            <div class="tag-name"></div>
-                            <div class="tag-link"></div>
-                            <div class="tag-description"></div>
-                        </div>
-                    </template>
-                    <div id="erTagsReferences"></div>
-                    <div class="tags-references-update"><a href="https://docs.google.com/spreadsheets/d/1WxzpEeuOrjose8jFMun73krnuIMsK0JGPCs66_AudxA/edit?usp=sharing">Update Tags and References</a></div>
-                </div>
+                <div id="tagsReferences"></div>
             </div>
             <div class="assessment-part">
                 <label for="erAA">Acknowledgements & Appreciations:</label>
@@ -165,16 +168,7 @@
         <fieldset id="workingConditions">
             <legend>Working Conditions</legend>
             <label for="wcGrade">Grade:</label>
-            <select name="{{ $WCGrade }}" id="wcGrade" class="grade-selector" required>
-                <option value="">--- Select ---</option>
-                <option value="hahb">Higher Higher</option>
-                <option value="fbha">Full Higher</option>
-                <option value="fafb">Full Full</option>
-                <option value="pbfa">Partial Full</option>
-                <option value="papb">Partial Partial</option>
-                <option value="nbpa">Non Partial</option>
-                <option value="nanb">Non Non</option>
-            </select>
+            <input name="{{ $WCGrade }}" type="text" id="wcGrade">
             <table class="grade">
                 <tr>
                     <td colspan="2">Non</td>
@@ -183,32 +177,44 @@
                     <td colspan="2">Higher</td>
                 </tr>
                 <tr>
-                    <td class="gna"></td>
-                    <td class="gnb"></td>
-                    <td class="gpa"></td>
-                    <td class="gpb"></td>
-                    <td class="gfa"></td>
-                    <td class="gfb"></td>
-                    <td class="gha"></td>
-                    <td class="ghb"></td>
+                    <td>
+                        <input type="checkbox" value="na" id="gNa">
+                        <label for="gNa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="nb" id="gNb">
+                        <label for="gNb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pa" id="gPa">
+                        <label for="gPa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pb" id="gPb">
+                        <label for="gPb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fa" id="gFa">
+                        <label for="gFa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fb" id="gFb">
+                        <label for="gFb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="ha" id="gHa">
+                        <label for="gHa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="hb" id="gHb">
+                        <label for="gHb" class="grade-checkbox-label"></label>
+                    </td>
                 </tr>
             </table>
             <div class="assessment-part">
                 <label for="wcTR">Tags & References:</label>
                 <input name="{{ $WCTR }}" type="text" id="wcTR">
-                <div class="tags-references-toggle">&plus;</div>
-                <div class="tags-references-ctn">
-                    <div class="tr-title">Working Conditions</div>
-                    <template id="wcTrTemplate">
-                        <div class="each-tr-ctn">
-                            <div class="tag-name"></div>
-                            <div class="tag-link"></div>
-                            <div class="tag-description"></div>
-                        </div>
-                    </template>
-                    <div id="wcTagsReferences"></div>
-                    <div class="tags-references-update"><a href="https://docs.google.com/spreadsheets/d/1jNqMMQzov_1HYj1X9dMg28X3lPHF4eT-PFV0phJ2k6s/edit?usp=sharing">Update Tags and References</a></div>
-                </div>
+                <div id="tagsReferences"></div>
             </div>
             <div class="assessment-part">
                 <label for="wcAA">Acknowledgements & Appreciations:</label>
@@ -231,90 +237,11 @@
                 <textarea name="{{ $WCV }}" id="wcV" rows="2"></textarea>
             </div>
         </fieldset>
-        <div class="section-view-toggle"><span class="mps">&minus;</span>Working Environment</div>
-        <fieldset id="workingEnvironment">
-            <legend>Working Environment</legend>
-            <label for="weGrade">Grade:</label>
-            <select name="{{ $WEGrade }}" id="weGrade" class="grade-selector" required>
-                <option value="">--- Select ---</option>
-                <option value="hahb">Higher Higher</option>
-                <option value="fbha">Full Higher</option>
-                <option value="fafb">Full Full</option>
-                <option value="pbfa">Partial Full</option>
-                <option value="papb">Partial Partial</option>
-                <option value="nbpa">Non Partial</option>
-                <option value="nanb">Non Non</option>
-            </select>
-            <table class="grade">
-                <tr>
-                    <td colspan="2">Non</td>
-                    <td colspan="2">Partial</td>
-                    <td colspan="2">Full</td>
-                    <td colspan="2">Higher</td>
-                </tr>
-                <tr>
-                    <td class="gna"></td>
-                    <td class="gnb"></td>
-                    <td class="gpa"></td>
-                    <td class="gpb"></td>
-                    <td class="gfa"></td>
-                    <td class="gfb"></td>
-                    <td class="gha"></td>
-                    <td class="ghb"></td>
-                </tr>
-            </table>
-            <div class="assessment-part">
-                <label for="weTR">Tags & References:</label>
-                <input name="{{ $WETR }}" type="text" id="weTR">
-                <div class="tags-references-toggle">&plus;</div>
-                <div class="tags-references-ctn">
-                    <div class="tr-title">Working Environment</div>
-                    <template id="weTrTemplate">
-                        <div class="each-tr-ctn">
-                            <div class="tag-name"></div>
-                            <div class="tag-link"></div>
-                            <div class="tag-description"></div>
-                        </div>
-                    </template>
-                    <div id="weTagsReferences"></div>
-                    <div class="tags-references-update"><a href="https://docs.google.com/spreadsheets/d/1k3M-dcK1Dn9rq3XxL4iAhXOIjD0GoyonUskDaWIi8IQ/edit?usp=sharing">Update Tags and References</a></div>
-                </div>
-            </div>
-            <div class="assessment-part">
-                <label for="weAA">Acknowledgements & Appreciations:</label>
-                <textarea name="{{ $WEAA }}" id="weAA" rows="2"></textarea>
-            </div>
-            <div class="assessment-part">
-                <label for="weRR">Reminders & Recommendations:</label>
-                <textarea name="{{ $WERR }}" id="weRR" rows="2"></textarea>
-            </div>
-            <div class="assessment-part">
-                <label for="weRC">Requirements & Corrections:</label>
-                <textarea name="{{ $WERC }}" id="weRC" rows="2"></textarea>
-            </div>
-            <div class="assessment-part">
-                <label for="weCI">Critical Issues:</label>
-                <textarea name="{{ $WECI }}" id="weCI" rows="2"></textarea>
-            </div>
-            <div class="assessment-part">
-                <label for="weV">Unverifiable:</label>
-                <textarea name="{{ $WEV }}" id="weV" rows="2"></textarea>
-            </div>
-        </fieldset>
         <div class="section-view-toggle"><span class="mps">&minus;</span>Worker Treatment</div>
         <fieldset id="workerTreatment">
             <legend>Worker Treatment</legend>
             <label for="wtGrade">Grade:</label>
-            <select name="{{ $WTGrade }}" id="wtGrade" class="grade-selector" required>
-                <option value="">--- Select ---</option>
-                <option value="hahb">Higher Higher</option>
-                <option value="fbha">Full Higher</option>
-                <option value="fafb">Full Full</option>
-                <option value="pbfa">Partial Full</option>
-                <option value="papb">Partial Partial</option>
-                <option value="nbpa">Non Partial</option>
-                <option value="nanb">Non Non</option>
-            </select>
+            <input name="{{ $WTGrade }}" type="text" id="wtGrade">
             <table class="grade">
                 <tr>
                     <td colspan="2">Non</td>
@@ -323,32 +250,44 @@
                     <td colspan="2">Higher</td>
                 </tr>
                 <tr>
-                    <td class="gna"></td>
-                    <td class="gnb"></td>
-                    <td class="gpa"></td>
-                    <td class="gpb"></td>
-                    <td class="gfa"></td>
-                    <td class="gfb"></td>
-                    <td class="gha"></td>
-                    <td class="ghb"></td>
+                    <td>
+                        <input type="checkbox" value="na" id="gNa">
+                        <label for="gNa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="nb" id="gNb">
+                        <label for="gNb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pa" id="gPa">
+                        <label for="gPa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pb" id="gPb">
+                        <label for="gPb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fa" id="gFa">
+                        <label for="gFa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fb" id="gFb">
+                        <label for="gFb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="ha" id="gHa">
+                        <label for="gHa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="hb" id="gHb">
+                        <label for="gHb" class="grade-checkbox-label"></label>
+                    </td>
                 </tr>
             </table>
             <div class="assessment-part">
                 <label for="wtTR">Tags & References:</label>
                 <input name="{{ $WTTR }}" type="text" id="wtTR">
-                <div class="tags-references-toggle">&plus;</div>
-                <div class="tags-references-ctn">
-                    <div class="tr-title">Worker Treatment</div>
-                    <template id="wtTrTemplate">
-                        <div class="each-tr-ctn">
-                            <div class="tag-name"></div>
-                            <div class="tag-link"></div>
-                            <div class="tag-description"></div>
-                        </div>
-                    </template>
-                    <div id="wtTagsReferences"></div>
-                    <div class="tags-references-update"><a href="https://docs.google.com/spreadsheets/d/111Ch7iu7VKS9Y-1REEY1x9NjszhNHiRglcTAmo6yaJc/edit?usp=sharing">Update Tags and References</a></div>
-                </div>
+                <div id="tagsReferences"></div>
             </div>
             <div class="assessment-part">
                 <label for="wtAA">Acknowledgements & Appreciations:</label>
@@ -371,20 +310,11 @@
                 <textarea name="{{ $WTV }}" id="wtV" rows="2"></textarea>
             </div>
         </fieldset>
-        <div class="section-view-toggle"><span class="mps">&minus;</span>Industrial Relations</div>
-        <fieldset id="industrialRelations">
-            <legend>Industrial Relations</legend>
-            <label for="irGrade">Grade:</label>
-            <select name="{{ $IRGrade }}" id="irGrade" class="grade-selector" required>
-                <option value="">--- Select ---</option>
-                <option value="hahb">Higher Higher</option>
-                <option value="fbha">Full Higher</option>
-                <option value="fafb">Full Full</option>
-                <option value="pbfa">Partial Full</option>
-                <option value="papb">Partial Partial</option>
-                <option value="nbpa">Non Partial</option>
-                <option value="nanb">Non Non</option>
-            </select>
+        <div class="section-view-toggle"><span class="mps">&minus;</span>Working Environment</div>
+        <fieldset id="workingEnvironment">
+            <legend>Working Environment</legend>
+            <label for="weGrade">Grade:</label>
+            <input name="{{ $WEGrade }}" type="text" id="weGrade">
             <table class="grade">
                 <tr>
                     <td colspan="2">Non</td>
@@ -393,32 +323,117 @@
                     <td colspan="2">Higher</td>
                 </tr>
                 <tr>
-                    <td class="gna"></td>
-                    <td class="gnb"></td>
-                    <td class="gpa"></td>
-                    <td class="gpb"></td>
-                    <td class="gfa"></td>
-                    <td class="gfb"></td>
-                    <td class="gha"></td>
-                    <td class="ghb"></td>
+                    <td>
+                        <input type="checkbox" value="na" id="gNa">
+                        <label for="gNa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="nb" id="gNb">
+                        <label for="gNb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pa" id="gPa">
+                        <label for="gPa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pb" id="gPb">
+                        <label for="gPb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fa" id="gFa">
+                        <label for="gFa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fb" id="gFb">
+                        <label for="gFb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="ha" id="gHa">
+                        <label for="gHa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="hb" id="gHb">
+                        <label for="gHb" class="grade-checkbox-label"></label>
+                    </td>
+                </tr>
+            </table>
+            <div class="assessment-part">
+                <label for="weTR">Tags & References:</label>
+                <input name="{{ $WETR }}" type="text" id="weTR">
+                <div id="tagsReferences"></div>
+            </div>
+            <div class="assessment-part">
+                <label for="weAA">Acknowledgements & Appreciations:</label>
+                <textarea name="{{ $WEAA }}" id="weAA" rows="2"></textarea>
+            </div>
+            <div class="assessment-part">
+                <label for="weRR">Reminders & Recommendations:</label>
+                <textarea name="{{ $WERR }}" id="weRR" rows="2"></textarea>
+            </div>
+            <div class="assessment-part">
+                <label for="weRC">Requirements & Corrections:</label>
+                <textarea name="{{ $WERC }}" id="weRC" rows="2"></textarea>
+            </div>
+            <div class="assessment-part">
+                <label for="weCI">Critical Issues:</label>
+                <textarea name="{{ $WECI }}" id="weCI" rows="2"></textarea>
+            </div>
+            <div class="assessment-part">
+                <label for="weV">Unverifiable:</label>
+                <textarea name="{{ $WEV }}" id="weV" rows="2"></textarea>
+            </div>
+        </fieldset>
+        <div class="section-view-toggle"><span class="mps">&minus;</span>Industrial Relations</div>
+        <fieldset id="industrialRelations">
+            <legend>Industrial Relations</legend>
+            <label for="irGrade">Grade:</label>
+            <input name="{{ $IRGrade }}" type="text" id="irGrade">
+            <table class="grade">
+                <tr>
+                    <td colspan="2">Non</td>
+                    <td colspan="2">Partial</td>
+                    <td colspan="2">Full</td>
+                    <td colspan="2">Higher</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="na" id="gNa">
+                        <label for="gNa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="nb" id="gNb">
+                        <label for="gNb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pa" id="gPa">
+                        <label for="gPa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="pb" id="gPb">
+                        <label for="gPb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fa" id="gFa">
+                        <label for="gFa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="fb" id="gFb">
+                        <label for="gFb" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="ha" id="gHa">
+                        <label for="gHa" class="grade-checkbox-label"></label>
+                    </td>
+                    <td>
+                        <input type="checkbox" value="hb" id="gHb">
+                        <label for="gHb" class="grade-checkbox-label"></label>
+                    </td>
                 </tr>
             </table>
             <div class="assessment-part">
                 <label for="irTR">Tags & References:</label>
                 <input name="{{ $IRTR }}" type="text" id="irTR">
-                <div class="tags-references-toggle">&plus;</div>
-                <div class="tags-references-ctn">
-                    <div class="tr-title">Industrial Relations</div>
-                    <template id="irTrTemplate">
-                        <div class="each-tr-ctn">
-                            <div class="tag-name"></div>
-                            <div class="tag-link"></div>
-                            <div class="tag-description"></div>
-                        </div>
-                    </template>
-                    <div id="irTagsReferences"></div>
-                    <div class="tags-references-update"><a href="https://docs.google.com/spreadsheets/d/1vC-isgsv4rj3-7Vv96vREKpFfSdDBbHZg9UUBfOuYdM/edit?usp=sharing">Update Tags and References</a></div>
-                </div>
+                <div id="tagsReferences"></div>
             </div>
             <div class="assessment-part">
                 <label for="irAA">Acknowledgements & Appreciations:</label>

@@ -8,6 +8,82 @@
 .com-data {
     margin-bottom: 1rem;
 }
+table.grade {
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid lightgray;
+    margin-top: 0.5rem;
+}
+table.grade tr td {
+    background-color: lightgray;
+    height: 2rem;
+    text-align: center;
+}
+table.grade tr td.gna.selectcolor {
+    background-color: #000000;
+}
+table.grade tr td.gnb.selectcolor {
+    background-color: #FF0000;
+}
+table.grade tr td.gpa.selectcolor {
+    background-color: #FF8000;
+}
+table.grade tr td.gpb.selectcolor {
+    background-color: #FFFF00;
+}
+table.grade tr td.gfa.selectcolor {
+    background-color: #81D41A;
+}
+table.grade tr td.gfb.selectcolor {
+    background-color: #00A933;
+}
+table.grade tr td.gha.selectcolor {
+    background-color: #55308D;
+}
+table.grade tr td.ghb.selectcolor {
+    background-color: #800080;
+}
+.tags-references-toggle {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #ddd;
+    background-color: darkslategray;
+    cursor: pointer;
+    margin-top: 6px;
+}
+.tags-references-ctn {
+    display: none;
+    border: 2px solid darkslategray;
+    padding: 3px 9px;
+    height: 18rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.tags-references-ctn .tr-title {
+    display: none;
+}
+.each-tr-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    margin: 9px 0;
+    border-radius: 6px;
+}
+.each-tr-ctn div.tag-name {
+    flex: 0 1 0;
+    margin-right: 1rem;
+}
+.each-tr-ctn div.tag-link {
+    flex: 1 1 0;
+}
+.each-tr-ctn div.tag-description {
+    flex: 0 0 100%;
+}
+.tags-references-update {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
 fieldset {
     min-width: 0;
     border: 1px solid lightgray;
@@ -24,12 +100,12 @@ label, input, select, textarea {
     display: block;
     width: 100%;
     font-size: inherit;
+    padding: 6px;
 }
 textarea {
     min-width: 100%;
     max-width: 100%;
 }
-
 .section-view-toggle {
     font-size: 1rem;
     font-weight: 600;
@@ -52,49 +128,6 @@ textarea {
     align-self: center;
 }
 
-table.grade {
-    width: 100%;
-    table-layout: fixed;
-}
-table.grade tr, table.grade td {
-    background-color: lightgray;
-    text-align: center;
-}
-
-table.grade input[type="checkbox"] {
-    display: none;
-}
-.grade-checkbox-label {
-    display: block;
-    height: 2rem;
-    width: 100%;
-    cursor: pointer;
-}
-#gNa:checked + .grade-checkbox-label {
-    background-color: #000000;
-}
-#gNb:checked + .grade-checkbox-label {
-    background-color: #FF0000;
-}
-#gPa:checked + .grade-checkbox-label {
-    background-color: #FF8000;
-}
-#gPb:checked + .grade-checkbox-label {
-    background-color: #FFFF00;
-}
-#gFa:checked + .grade-checkbox-label {
-    background-color: #81D41A;
-}
-#gFb:checked + .grade-checkbox-label {
-    background-color: #00A933;
-}
-#gHa:checked + .grade-checkbox-label {
-    background-color: #55308D;
-}
-#gHb:checked + .grade-checkbox-label {
-    background-color: #800080;
-}
-
 .assessment-part {
     padding: 6px 9px 9px 9px;
     border: 1px solid lightgray;
@@ -108,4 +141,6 @@ table.grade input[type="checkbox"] {
     border: 1px solid #999;
     padding: 0.5rem;
 }
+
+
 
