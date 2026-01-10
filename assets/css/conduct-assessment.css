@@ -70,15 +70,22 @@ table.grade tr td.ghb.selectcolor {
     margin: 9px 0;
     border-radius: 6px;
 }
+.each-tr-ctn div {
+    flex: 0 0 100%;
+}
 .each-tr-ctn div.tag-name {
-    flex: 0 1 0;
-    margin-right: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+    margin-bottom: 3px;
 }
 .each-tr-ctn div.tag-link {
-    flex: 1 1 0;
-}
-.each-tr-ctn div.tag-description {
-    flex: 0 0 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 6px;
+    background-color: lightgray;
+    border-radius: 3px;
 }
 .tags-references-update {
     font-size: 1rem;
@@ -141,6 +148,17 @@ textarea {
     border: 1px solid #999;
     padding: 0.5rem;
 }
-
-
-
+#caFormSubmit {
+    padding: 9px 18px;
+    font-size: 1.5rem;
+    background-color: darkslategray;
+    color: #eee;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+    #caFormSubmit:hover {
+        background-color: gray;
+    }
+}

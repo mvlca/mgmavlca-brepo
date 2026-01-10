@@ -113,8 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
+  
     document.getElementById('conductAssessmentForm').addEventListener('submit', async(e) => {
+        const caFormSubmit = document.getElementById('caFormSubmit');
+        const originalText = caFormSubmit.textContent;
+        caFormSubmit.textContent = "Please Wait...";
+        caFormSubmit.disabled = true;
         e.preventDefault();
         const form = e.target;
         const res = await fetch(form.action, {
@@ -126,6 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         console.log("google form maybe updated.");
+        caFormSubmit.textContent = originalText;
+        caFormSubmit.disabled = false;
     });
 
     console.log("conduct assessment...");
