@@ -8,6 +8,7 @@ function copyLink() {
     const copyLinkBtn = document.querySelectorAll('i.fa-solid.fa-link');
     copyLinkBtn.forEach(b => {
         b.addEventListener('click', (e) => {
+            e.stopPropagation();
             const titleId = e.target.parentElement.id;
             if (!titleId) return;
             const link = `${window.location.origin}${window.location.pathname}#${titleId}`;

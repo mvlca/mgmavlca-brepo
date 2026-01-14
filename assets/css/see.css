@@ -9,7 +9,7 @@
 .see-container i.fa-solid.fa-link {
     color: lightgray;
     margin-left: 0.75rem;
-    cursor: pointer;
+    cursor: copy;
 }
 .see-container .legal-reference {
     display: block;
