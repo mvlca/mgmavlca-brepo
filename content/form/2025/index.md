@@ -1,15 +1,20 @@
 +++
 date = '2025-08-19T18:12:31+06:30'
 draft = false
-title = 'VLCA Submission Form 2025'
+title = 'VLCA Submission Form 2025 (Closed)'
 description = 'Fill out the VLCA Submission Form, and then send the PDF file you receive to the email address mgmavlca@gmail.com.'
 layout = 'plainpage'
-[params.page]
-    add = 'form'
 +++
 
 {{< warning class="warning lhi18" >}}
-ဤ Form ကို ဖြည့်၊ Submit ကိုနှိပ်ပြီး နောက်ရောက်မည့် စာမျက်နှာတွင် Download*** ဆိုတာကိုထပ်နှိပ်ပါ။ ဖိုင်တစ်ခုကို Download ဆွဲယူရရှိပါလိမ့်မည်။ ၎င်းဖိုင်ကို mgmavlca@gmail.com သို့ အရင် email ပို့ပေးပါ။ Documents upload တင်ခြင်း သို့မဟုတ် Documents email ပို့ခြင်းကို နောက်မှ အချိန်ယူဆောင်ရွက်ပါ။
+ဤ VLCA Submission Form သည် 2025 အတွက်ဖြစ်ပြီး ပိတ်သိမ်းပြီးဖြစ်ပါသည်။ 2026 ခုနှစ်အတွက် VLCA Submission Form ဖြည့်စွက်ရန် <a href="/form/2026">VLCA Submission Form 2026</a> ကို ဖြည့်ရမည် ဖြစ်ပါသည်။
 {{< /warning >}}
 
-{{< include-partial "form/form.html" >}}
+### VLCA Submission Form 2025{class="mt3rem"}
+
+VLCA Submission Form 2025 is now closed. A total 487 member factories submitted their forms for the period of January 1, 2025 to January 27, 2026. The document upload and assessment phrases are currently underway. Please use the links below to view the 2025 submissions.
+
+[Visualized Responses Data Overview](/docs/records/responses-overview-2025/)
+
+[Factories List Completed VLCA Submission Form](/docs/records/factories-list-2025/)
+

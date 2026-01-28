@@ -8,7 +8,7 @@ layout = 'plainpage'
 +++
 
 {{< warning class="warning lhi18" >}}
-2025 ခုနှစ်အတွက် VLCA Submission Form မတင်ရသေးသော အသင်းဝင်ကုမ္ပဏီ/စက်ရုံများအနေဖြင့် <a href="/form/2025">VLCA Submission Form 2025</a> ကို ဖြည့်ရန် ဖြစ်ပါသည်။ ဤ Form သည် 2026 ခုနှစ်အတွက် ဖြစ်ပါသည်။
+ဤ Form ကို ဖြည့်၊ Submit ကိုနှိပ်ပြီး နောက်ရောက်မည့် စာမျက်နှာတွင် Download*** ဆိုတာကိုထပ်နှိပ်ပါ။ ဖိုင်တစ်ခုကို Download ဆွဲယူရရှိပါလိမ့်မည်။ ၎င်းဖိုင်ကို mgmavlca@gmail.com သို့ အရင် email ပို့ပေးပါ။ Documents upload တင်ခြင်း သို့မဟုတ် Documents email ပို့ခြင်းကို နောက်မှ အချိန်ယူဆောင်ရွက်ပါ။
 {{< /warning >}}
 
 {{< include-partial "form/form-2026.html" >}}

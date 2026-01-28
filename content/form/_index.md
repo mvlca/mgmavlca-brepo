@@ -6,5 +6,5 @@ description = 'Myanmar Garment Manufacturers Association - MGMA VLCA Submission 
 +++
 
 {{< warning class="warning lhi18 mb2rem" >}}
-VLCA Submission Form ကို နှစ်စဥ်ဖြေဆိုပေးပို့ရခြင်းဖြစ်ပါသည်။ 2025 ခုနှစ်အတွက် မပေးပို့ရသေးသော အသင်းဝင်ကုမ္ပဏီများသည် <a href="/form/2025">VLCA Submission Form 2025</a> ကို ဖြည့်စွက်ပေးပို့ရမည် ဖြစ်ပါသည်။
+VLCA Submission Form 2025 ကို ပိတ်သိမ်းပြီးဖြစ်ပါသည်။ 2026 အတွက် <a href="/form/2026">VLCA Submission Form 2026</a> ကို ဖြည့်စွက်ပေးပို့ရမည် ဖြစ်ပါသည်။
 {{< /warning >}}
