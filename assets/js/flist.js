@@ -14,14 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
         factoriesCount.textContent = visibleCount;
     });
 
-    const appScriptId = "AKfycbxNBipzRe0emt7-6qMV1nxzWLcAzbn61VMhJXqaqqDgEab0tUIgbqrqIfij7WBWwfAv";
+    // const appScriptId = "AKfycbxNBipzRe0emt7-6qMV1nxzWLcAzbn61VMhJXqaqqDgEab0tUIgbqrqIfij7WBWwfAv";
 
     const factoriesCount = document.getElementById('factories-count');
     const factoriesBlock = document.getElementById('factories-block');
     const factoriesTemplate = document.getElementById('factories-template');
 
     function loadFactories() {
-        const url = `https://script.google.com/macros/s/${appScriptId}/exec?sheet=2025Overview4`;
+        // const url = `https://script.google.com/macros/s/${appScriptId}/exec?sheet=2025Overview4`;
+        const url = `https://docs.mgmaemp.com/public/vlca-Flist-2025.json`;
 
         factoriesCount.textContent = "...";
         factoriesBlock.innerHTML = 'Please wait. Loading ...';
