@@ -14,51 +14,60 @@ document.addEventListener('DOMContentLoaded', () => {
         factoriesCount.textContent = visibleCount;
     });
 
-    // const appScriptId = "AKfycbxNBipzRe0emt7-6qMV1nxzWLcAzbn61VMhJXqaqqDgEab0tUIgbqrqIfij7WBWwfAv";
-
     const factoriesCount = document.getElementById('factories-count');
     const factoriesBlock = document.getElementById('factories-block');
     const factoriesTemplate = document.getElementById('factories-template');
 
-    function loadFactories() {
-        // const url = `https://script.google.com/macros/s/${appScriptId}/exec?sheet=2025Overview4`;
-        const url = `https://docs.mgmaemp.com/public/vlca-Flist-2025.json`;
+    
+    async function loadFactories () {
+        const varCon = document.getElementById('varFFM');
+        const url = varCon.getAttribute('data-custom-var');
 
         factoriesCount.textContent = "...";
         factoriesBlock.innerHTML = 'Please wait. Loading ...';
 
-        fetch(url)
-            .then(res => res.json())
-            .then(data => {
-                factoriesBlock.innerHTML = '';
-                factoriesCount.textContent = data.length;
+        try {
+            const res = await fetch(url);
+            if (!res.ok) throw new Error("Failed to fetch TSV.");
 
-                // build array with objects for search
-                factories = data.map(factoryData => {
-                    const clone = factoriesTemplate.content.cloneNode(true);
-                    const eachBlock = clone.querySelector('.each-factory-block');
-
-                    eachBlock.querySelector('.each-factory-name').textContent = factoryData.FName;
-                    eachBlock.querySelector('.each-factory-type').textContent = factoryData.COwner;
-                    eachBlock.querySelector('.each-factory-workers').textContent = factoryData.Workers;
-                    eachBlock.querySelector('.each-factory-position').textContent = factoryData.Position;
-                    eachBlock.querySelector('.each-factory-timestamp').textContent = factoryData.Timestamp;
-
-                    factoriesBlock.appendChild(eachBlock);
-
-                    // return object for searching
-                    return {
-                        FName: factoryData.FName || "",
-                        COwner: factoryData.COwner || "",
-                        element: eachBlock
-                    };
+            const text = await res.text();
+            const lines = text.trim().split('\n');
+            const headers = lines[0].split('\t').map(h => h.trim());
+            const data = lines.slice(1).map(line => {
+                const values = line.split('\t');
+                const obj = {};
+                headers.forEach((header, i) => {
+                    obj[header] = values[i] ? values[i].trim() : "";
                 });
-            })
-            .catch(err => {
-                factoriesBlock.innerHTML = "Error loading data.";
-                factoriesCount.textContent = "Error";
-                console.error("Fetch error:", err);
+                return obj;
             });
+
+            factoriesBlock.innerHTML = "";
+            factoriesCount.textContent = data.length;
+
+            factories = data.map(factoryData => {
+                const clone = factoriesTemplate.content.cloneNode(true);
+                const eachBlock = clone.querySelector('.each-factory-block');
+
+                eachBlock.querySelector('.each-factory-name').textContent = factoryData.FName || "";
+                eachBlock.querySelector('.each-factory-type').textContent = factoryData.COwner || "";
+                eachBlock.querySelector('.each-factory-workers').textContent = factoryData.FWorkers || "";
+                eachBlock.querySelector('.each-factory-position').textContent = factoryData.PPosition || "";
+                eachBlock.querySelector('.each-factory-timestamp').textContent = factoryData.Timestamp || "";
+
+                factoriesBlock.appendChild(eachBlock);
+
+                return {
+                    FName: factoryData.FName || "",
+                    COwner: factoryData.COwner || "",
+                    element: eachBlock
+                };
+            });
+        } catch (err) {
+            factoriesBlock.innerHTML = "Error loading data."
+            factoriesCount.textContent = "Error";
+            console.error("Fetch error: ", err);
+        }
     }
 
     // Load data on page ready
