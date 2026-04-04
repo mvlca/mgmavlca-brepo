@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     secToggle.forEach(b => {
         const minusPlus = b.querySelector('.mps');
         b.addEventListener('click', () => {
-            const shBlock = b.nextSibling;
+            const shBlock = b.nextElementSibling;
             if (!shBlock) return;
             if (shBlock.style.display === 'block' || shBlock.style.display === '') {
                 shBlock.style.display = 'none';
