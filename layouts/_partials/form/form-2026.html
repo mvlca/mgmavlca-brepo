@@ -414,7 +414,7 @@
                 </p>
                 <div class="sigkey-input">
                     <label for="sigkey.1116771921">Copy above and Paste into:</label><br>
-                    <input type="text" name="entry.1116771921" placeholder="this-NUM:XXXXXX-may-represent-my-signature-on-TS:XXXXXXXXXXXXXX" id="sigkey.1116771921" required>
+                    <input type="text" name="entry.1116771921" placeholder="this-NUM:XXXXXX-may-represent-my-signature-on-TS:XXXXXXXXXXXXXX" pattern="^this-NUM:[0-9]{6}-may-represent-my-signature-on-TS:[0-9]{14}$" id="sigkey.1116771921" required>
                 </div>
             </fieldset>
             <button id="formSubmitButton" type="submit">Submit</button>
