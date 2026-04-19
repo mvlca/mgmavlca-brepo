@@ -7,8 +7,7 @@ title = 'Search in this Site'
 +++
 
 {{< inner-html >}}
-<pagefind-modal-trigger></pagefind-modal-trigger>
-<pagefind-modal></pagefind-modal>
+<div id="search"></div>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         new PagefindUI({
