@@ -9,14 +9,4 @@ title = 'Search in this Site'
 {{< inner-html >}}
 <pagefind-modal-trigger></pagefind-modal-trigger>
 <pagefind-modal></pagefind-modal>
-<script>
-    window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({
-            element: "#search",
-            showSubResults: true,
-            showImages: false,
-            pageSize: 9
-            });
-    });
-</script>
 {{< /inner-html >}}
