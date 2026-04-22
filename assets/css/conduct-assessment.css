@@ -107,6 +107,7 @@ label, input, select, textarea {
     display: block;
     width: 100%;
     font-size: inherit;
+    font-family: inherit;
     padding: 6px;
 }
 textarea {
