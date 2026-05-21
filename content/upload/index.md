@@ -6,6 +6,10 @@ description = 'Send required documents after completion of VLCA Submission Form.
 layout = 'plainpage'
 +++
 
+{{< warning class="warning lhi18" >}}
+Document များ Upload တင်ရန် စာမျက်နှာကို Develop လုပ်နေဆဲ ဖြစ်ပါသည်။ ထိုအချိန်အတွင်း Email ဖြင့် ပို့ပေးရန် မေတ္တာရပ်ခံအပ်ပါသည်။
+{{< /warning >}}
+
 {{< image-global src="images/mgma-logo-0.png" class="mgma-logo-style-one" >}}
 
 ### VLCA Documents
