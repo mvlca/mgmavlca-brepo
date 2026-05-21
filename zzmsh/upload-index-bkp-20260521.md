@@ -1,18 +1,22 @@
 +++
 date = '2025-08-22T10:29:18+06:30'
 draft = false
-title = 'VLCA Documents'
-description = 'Send required documents after completion of VLCA Submission Form.'
+title = 'VLCA Upload'
+description = 'Upload required documents after completion of VLCA Submission Form.'
 layout = 'plainpage'
 +++
 
 {{< image-global src="images/mgma-logo-0.png" class="mgma-logo-style-one" >}}
 
-### VLCA Documents
+### VLCA Upload
 
-After MGMA VLCA Submission, please prepare your relevant documents and send them to [mgmavlca@gmail.com](mailto:mgmavlca@gmail.com).
+After MGMA VLCA Submission, you will upload your necessary and relevant documentations via a Google Form linked to the button below.
 
-Documents list to send:
+{{< inner-html >}}
+<div><a href="https://docs.google.com/forms/d/e/1FAIpQLSf5cQANss3rmYs2UnC8a9Zxdi87JeUMhKukYGbHLs1x2aeNMA/viewform?usp=header" class="button-style-one mb1rem">Upload Files</a></div>
+{{< /inner-html >}}
+
+Documents list to upload:
 
 1. နောက်ဆုံးအလုပ်ခန့်ခဲ့သော အလုပ်သမား ၃ ဦး၏ CV From များနှင့် ၎င်းတို့အား လက်မှတ်ထိုးခိုင်းခဲ့သော "အလုပ်သမားသစ်များ လိုက်နာရန် စည်းကမ်းများ" သို့မဟုတ် "ဝန်ခံကတိပြုချက်" သို့မဟုတ် ထိုသို့သဘောသက်ရောက်သော စာရွက်။
 2. နောက်ဆုံးချုပ်ဆိုခဲ့သော EC စာချုပ်သုံးခု၏ အလုပ်ရှင်၊ အလုပ်သမားနှင့် သက်သေများ လက်မှတ်ထိုးထားသော စာမျက်နှာနှင့် သက်ဆိုင်ရာအစိုးရအရာရှိ၏ အတည်ပြုလက်မှတ်ပါရှိသော စာမျက်နှာများ။
@@ -24,5 +28,5 @@ Documents list to send:
 8. Child Labour ၊ Forced Labour ၊ လုပ်ငန်းခွင် ဘေးအန္တရာယ်ကင်းရှင်းရေးနှင့် ကျန်းမာရေး၊ အခကြေးငွေပေးချေရေး၊ အလုပ်သမားရေးရာ လုပ်ငန်းညှိနှိုင်းရေးကော်မတီ စသည့်ကိစ္စရပ်များအတွက် Policy ၊ Procedure များနှင့် အခြားဖော်ပြလိုသော စာရွက်စာတမ်းများ။
 {class="lhi18"}
 
-&ast; ဖိုင်များကို Email ပို့ရာတွင် စာရွက်စာတမ်းများကို **Portable Document Format** ဖိုင်အနေဖြင့် scan ဖတ်ပါ။ စာမျက်နှာများစွာပါသော ဖိုင်တစ်ခုတည်းဖြစ်အောင်ဖတ်ပါ သို့မဟုတ် ထိုဖိုင်များကို ပေါင်းပါ။ ဓါတ်ပုံဖိုင်များကို ဓါတ်ပုံအတိုင်းထားပါ။ အားလုံးကို Folder တစ်ခုအတွင်းစုထည့်ပါ။ Folder ကို Right Click နှိပ်ပါ။ Send to &rarr; Compress (Zipped) Folder ကိုနှိပ်ပါ။ ပြီးမှ ရလာသော Zip ဖိုင်ကို mgmavlca@gmail.com သို့ ပို့ပေးပါ။ ဖိုင်တစ်ခုချင်းစီ၏ file size ကို 25MB အထိသာ Gmail ကလက်ခံပါသည်။ 25MB ထက်ပိုပါက Drive တွင်သိမ်း၍ Share သည့်နည်းဖြင့် ပေးပို့နိုင်ပါသည်။
+&ast; ဖိုင်များကို Upload တင်ရာတွင် စာရွက်စာတမ်းများကို **Portable Document Format** ဖိုင်အနေဖြင့် scan ဖတ်ပါ။ စာမျက်နှာများစွာပါသော ဖိုင်တစ်ခုတည်းဖြစ်အောင်ဖတ်ပါ သို့မဟုတ် ထိုဖိုင်များကို ပေါင်းပါ။ ဓါတ်ပုံဖိုင်များကို ဓါတ်ပုံအတိုင်းထားပါ။ အားလုံးကို Folder တစ်ခုအတွင်းစုထည့်ပါ။ Folder ကို Right Click နှိပ်ပါ။ Send to &rarr; Compress (Zipped) Folder ကိုနှိပ်ပါ။ ပြီးမှ ရလာသော Zip ဖိုင်ကို Upload တင်ပေးပါ။ Zip ဖိုင်တစ်ခုချင်းစီ၏ file size ကို 1GB အထိလက်ခံပါသည်။ 1GB ထက်ပိုပါက Folder နှစ်ခုခွဲ၍ Zip ဖိုင်နှစ်ခုဖြစ်အောင်လုပ်ပါ။
 {class="mb3rem lhi18"}

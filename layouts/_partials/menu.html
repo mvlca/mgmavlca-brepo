@@ -25,8 +25,9 @@
 {{- end }}
 {{- end }}
 <li>
-    <a {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>{{
-        $name }}{{ .Post }}</a>
+    <a {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>
+        {{ $name }}{{ .Post }}
+    </a>
     {{- with .Children }}
     <ul>
         {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
