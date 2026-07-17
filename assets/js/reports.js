@@ -5,7 +5,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     form.set("preset", "2026");
     const res = await fetch(url, {
         method: "POST",
-        body: form
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            preset: "2026"
+        })
     });
     const text = await res.text();
     if (!ctn || !text) return;
