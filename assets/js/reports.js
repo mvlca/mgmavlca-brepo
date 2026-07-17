@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const ctn = document.getElementById('allReports');
-    const url = "https://reports.mgmavlca.org/api/reports/fetchtext";
-    const form = new FormData();
-    form.set("preset", "2026");
-    const res = await fetch(url, {
+    const apiUrl = "https://reports.mgmavlca.org/api/reports/fetchtext";
+    const res = await fetch(apiUrl, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

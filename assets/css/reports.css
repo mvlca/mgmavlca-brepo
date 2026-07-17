@@ -1,0 +1,26 @@
+div#all-reports {
+    margin-top: 2rem;
+}
+div.each-report {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    box-shadow: 6px 6px 6px #eee;
+    padding: 0.5rem;
+}
+div.each-report div.name a {
+    text-decoration: none;
+    display: block;
+    background-color: #ddd;
+    border-radius: 3px;
+    padding: 3px 9px;
+    color: #129;
+}
+div.each-report div.grade, div.each-report div.status-line {
+    margin-left: 3px;
+}
+div.each-report div.status-line {
+    color: #666;
+    font-size: 1rem;
+    font-family: monospace;
+}
