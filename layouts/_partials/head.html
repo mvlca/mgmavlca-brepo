@@ -51,6 +51,8 @@
         {{ partialCached "head/grades.html" . }}
     {{ else if eq .Params.page.add "flist" }}
         {{ partialCached "head/flist.html" . }}
+    {{ else if eq .Params.page.add "reports" }}
+        {{ partialCached "head/reports.html" . }}
     {{ else if eq .Params.page.add "see" }}
         {{ partialCached "head/see.html" . }}
     {{ else if eq .Params.page.add "search" }}

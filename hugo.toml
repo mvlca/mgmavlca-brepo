@@ -33,7 +33,7 @@ title = 'MGMAVLCA'
         weight = 4
     [[menus.main]]
         name = 'Reports'
-        url = 'https://reports.mgmavlca.org/'
+        pageRef = '/reports'
         weight = 5
     [[menus.main]]
         name = 'ao'
