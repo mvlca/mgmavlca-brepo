@@ -1,11 +1,35 @@
+div.total-reports {
+    font-size: 1rem;
+    font-family: monospace;
+    color: #333;
+    margin-bottom: 9px;
+}
+form.reports-search {
+    position: relative;
+    display: flex;
+}
+form.reports-search input {
+    width: 100%;
+    padding: 3px 6px;
+    font-size: inherit;
+}
+form.reports-search button[type="reset"] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6px;
+    padding: 3px 9px;
+    border: none;
+    cursor: pointer;
+}
 div#all-reports {
     margin-top: 2rem;
 }
 div.each-report {
-    border: 1px solid #ddd;
+    border: 1px solid #bbb;
     border-radius: 3px;
     margin-bottom: 2rem;
-    box-shadow: 6px 6px 6px #eee;
+    box-shadow: 6px 6px 6px #ddd;
     padding: 0.5rem;
 }
 div.each-report div.name a {
@@ -18,6 +42,11 @@ div.each-report div.name a {
 }
 div.each-report div.grade, div.each-report div.status-line {
     margin-left: 3px;
+}
+div.each-report div span.at-divider {
+    font-size: 1rem;
+    color: #999;
+    margin: 0 9px;
 }
 div.each-report div.status-line {
     color: #666;
