@@ -39,7 +39,8 @@ async function reportsList() {
     const temp = document.getElementById('reports-template') as HTMLTemplateElement | null;
     if (!ctn || !temp) return;
     try {
-        const apiUrl = "https://reports.mgmavlca.org/api/reports/fetchtext";
+        // const apiUrl = "https://reports.mgmavlca.org/api/reports/fetchtext";
+        const apiUrl = "https://reports.mgmavlca.org/api/reports/reportslist";
         const res = await fetch(apiUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
