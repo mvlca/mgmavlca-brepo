@@ -1,0 +1,16 @@
+.share-btn {
+    color: #666;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    float: right;
+    padding: 2px;
+    cursor: pointer;
+    &:hover {
+        background-color: #ddd;
+    }
+}

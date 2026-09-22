@@ -41,6 +41,7 @@
     {{ partialCached "head/home.html" . }}
 {{ else if .IsPage }}
     {{ partialCached "head/page.html" . }}
+    {{ partialCached "head/share.html" . }}
     {{ if eq .Params.page.add "form" }}
         {{ partialCached "head/form/form.html" . }}
     {{ else if eq .Params.page.add "form-2026" }}
@@ -62,6 +63,7 @@
     {{ end }}
 {{ else if .IsSection }}
     {{ partialCached "head/section.html" . }}
+    {{ partialCached "head/share.html" . }}
     {{ if eq .Params.section.add "see" }}
         {{ partialCached "head/see.html" . }}
     {{ end }}
